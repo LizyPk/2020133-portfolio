@@ -1,0 +1,85 @@
+body
+{
+width: 100%;
+height: 100%;
+margin: 0; /*Sumir com a barra de rolagem horizontal */
+}
+ul
+{
+padding: 0px!important;
+}
+.menu-principal
+{
+width: 100%;
+background-color: #ffffff;
+height: 60px;
+}
+main
+{
+margin: 0 auto;
+width: 980px; 
+position: relative;
+}
+.logo
+{
+float: left;
+padding: 16px;
+width: 70%; /* divide com .redes-sociais*/
+}
+.redes-sociais ul li
+{
+margin-left: 15px;
+display: inline-block;
+/*float: left;*/
+list-style: none;
+}
+.redes-sociais
+{
+width: 25%; /* divide com .logo*/
+float: right;
+}
+
+.header-2
+{
+width: 980px;
+margin: 0 auto;
+}
+.menu-urls
+{
+text-align: left;
+height: 60px;
+border-bottom: 3px solid #000000;
+}
+.menu ul li
+{
+display: inline-block;
+color: rgb(93, 76, 172);
+margin-left: 15px;
+}
+.menu ul li a
+{
+color: rgb(255, 255, 255);
+text-decoration: none; /*Retirar a formatação padrão*/
+font-size: 18px;
+text-transform: uppercase; /*letra maiúscula*/
+ }
+ .busca
+ {
+     text-align: center;
+     width:30%;
+     float:right;
+ }
+ .busca input
+ {
+     height: 36px;
+     padding: 12px;
+     width: 190px;
+     margin-top:10px;
+ }
+ .col-100
+{
+background-color: rgb(231, 82, 82);
+width: 100%;
+float: left;
+position: relative;
+}
