@@ -10,6 +10,74 @@
 </head>
 
 <body>
+    <style>
+        *
+
+        /* FAZER RESPONSIVO*/
+            {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffffff;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        /* Centro do portifa */
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+
+        .row {
+            margin: 8px -16px;
+        }
+
+        /* Adicionando padding entre as colunas */
+        .row,
+        .row>.column {
+            padding: 8px;
+        }
+
+        /* Crie quatro colunas iguais que ficam próximas uma da outra */
+        .column {
+            float: left;
+            width: 25%;
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Content */
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* detalhar depois... */
+        @media screen and (max-width: 900px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        /* empilha as colunas sobre as outras*/
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
     <header class="menu-principal">
         <div class="header-1">
             <div class="logo">
@@ -57,7 +125,7 @@
     </div>
     <div class="column">
         <div class="content">
-            <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+            <img src="img/img1.png" alt="img1" style="width:100%">
             <h3>My Work</h3>
             <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat
                 nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
@@ -65,7 +133,7 @@
     </div>
     <div class="column">
         <div class="content">
-            <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+            <img src="img/img2.png" alt="img2" style="width:100%">
             <h3>My Work</h3>
             <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat
                 nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
@@ -73,7 +141,7 @@
     </div>
     <div class="column">
         <div class="content">
-            <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+            <img src="img/img3.jpg" alt="img3" style="width:100%">
             <h3>My Work</h3>
             <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat
                 nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
