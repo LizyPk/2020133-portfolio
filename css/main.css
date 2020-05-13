@@ -10,7 +10,8 @@ padding: 0px!important;
 }
 .menu-principal
 {
-width: 100%;
+width: 980px;
+margin: 0 auto;
 background-color: #ffffff;
 height: 80px;
 }
@@ -24,18 +25,18 @@ position: relative;
 {
 float: left;
 padding: 16px;
-width: 70%; /* divide com .redes-sociais*/
+width: 60%; /* divide com .redes-sociais*/
 }
 .redes-sociais ul li
 {
-margin-left: 15px;
+margin-left: 25px;
 display: inline-block;
 /*float: left;*/
 list-style: none;
 }
 .redes-sociais
 {
-width: 25%; /* divide com .logo*/
+width: 10%; /* divide com .logo*/
 float: right;
 }
 
@@ -80,7 +81,83 @@ text-transform: uppercase; /*letra maiúscula*/
 {
 background-color: #e20612;
 width: 100%;
-float: left;
 position: relative;
 }
-/* PARTE DA GRID DO SITE */
+
+/* PARTE DA GRID DO SITE DE FORMA RESPONSIVA (abaixo)*/
+*
+{
+    box-sizing: border-box;
+}
+
+body 
+{
+    background-color: #ffffff;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Centro do portifa */
+.main 
+{
+    width: 980px;
+    margin: 0 auto;
+}
+
+h1 
+{
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row 
+{
+    margin: 8px -16px;
+}
+
+/* Adicionando padding entre as colunas */
+.row,
+.row>.column 
+{
+    padding: 8px;
+}
+
+/* Crie quatro colunas iguais que ficam próximas uma da outra */
+.column 
+{
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after 
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Conteúdo */
+.content 
+{
+    background-color: #e0dfdf;
+    padding: 10px;
+}
+
+/* detalhar depois... */
+@media screen and (max-width: 900px) 
+{
+    .column 
+    {
+        width: 50%;
+    }
+}
+
+/* empilha as colunas sobre as outras*/
+@media screen and (max-width: 600px) 
+{
+    .column 
+    {
+        width: 100%;
+    }
+}
