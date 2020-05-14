@@ -8,6 +8,7 @@ ul
 {
 padding: 0px!important;
 }
+/* MENU PRINCIPAL */
 .menu-principal
 {
 width: 980px;
@@ -39,7 +40,7 @@ list-style: none;
 width: 10%; /* divide com .logo*/
 float: right;
 }
-
+/* FIM MENU PRINCIPAL */
 .header-2
 {
 width: 980px;
@@ -161,3 +162,10 @@ h1
         width: 100%;
     }
 }
+
+/* COMUNICAÇÕES COM CURSOR */
+.cursor 
+{
+    cursor: pointer;
+}
+

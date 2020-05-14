@@ -3,13 +3,14 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <title>Portifolio</title>
+    <title>Portfolio</title>
     <!-- javascript -->
     <script src="js/script.js">
     </script>
 </head>
 
 <body>
+    <!-- TOPO DO SITE -->
     <header class="menu-principal">
         <div class="header-1">
             <div class="logo">
@@ -32,15 +33,16 @@
                     </a>
                 </il>
             </div>
+            <!-- FIM DO TOPO DO SITE -->
     </header>
     <main class="col-100 menu-utls">
         <div class="header-2">
             <div class="menu">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Games</a></li>
-                    <li><a href="">Team</a></li>
+                    <li><a onclick="homePage()"> Home </a></li>
+                    <li><a onclick="projectsPage()">Projects</a></li>
+                    <li><a onclick="gamesPage()">Games</a></li>
+                    <li><a onclick="teamPage()">Team</a></li>
                 </ul>
             </div>
         </div>
@@ -51,15 +53,16 @@
     </main>
 
     <!-- PARTE DA GRID DO SITE -->
-    <h3>PROJETOS</h3>
-    <p>Aqui abaixo estão os trabalhos desenvolvidos nos estúdio desde 2014.</p>
+    <h3>PROJECTS</h3>
+    <p>Atomic projects</p>
     </div>
     </div>
     <!--INICIO DA LINHA-->
     <div class="row">
         <div class="column">
             <div class="content">
-                <img src="img/img1.png" alt="img1" style="width:100%">
+                <img src="img/img1.png" alt="img1" style="width:100%" onclick="gameProjectPage('BeTogether')"
+                    alt="BeTogether">
                 <h3>Be Together</h3>
                 <p>Be Together is a mobile puzzle game currently in development where you need to solve the riddles on
                     each room by getting together with other characters and bringing them to a portal that matches their
@@ -68,21 +71,24 @@
         </div>
         <div class="column">
             <div class="content">
-                <img src="img/img2.png" alt="img2" style="width:100%">
+                <img src="img/img2.png" alt="img2" style="width:100%" onclick="gameProjectPage('GetThemHome')"
+                    alt="GetThemHome">
                 <h3>Get Them Home</h3>
                 <p>A Global Game Jam Game</p>
             </div>
         </div>
         <div class="column">
             <div class="content">
-                <img src="img/img3.jpg" alt="img3" style="width:100%">
+                <img src="img/img3.jpg" alt="img3" style="width:100%" onclick="gameProjectPage('Unilabirinto')"
+                    alt="Unilabirinto">
                 <h3>Unilabirinto</h3>
                 <p>Experimental Game to Unisinos Lab</p>
             </div>
         </div>
         <div class="column">
             <div class="content">
-                <img src="img/img4.png" alt="img4" style="width:100%">
+                <img src="img/img4.png" alt="img4" style="width:100%" onclick="gameProjectPage('AtomicRocketArena')"
+                    alt="AtomicRocketArena">
                 <h3>Atomic Rocket Arena</h3>
                 <p>Originally released in 2015, the game was updated in 2017 with new arenas with different mechanics
                     and improvements in art.</p>
@@ -94,7 +100,8 @@
     <div class="row">
         <div class="column">
             <div class="content">
-                <img src="img/img5.png" alt="img5" style="width:100%">
+                <img src="img/img5.png" alt="img5" style="width:100%" onclick="gameProjectPage('SetePovos')"
+                    alt="SetePovos">
                 <h3>Sete Povos</h3>
                 <p>Sete Povos permite que você viva o cotidiano de uma redução jesuíticas no século XVIII no sul do
                     Brasil. Divirta-se jogando diferentes mini-games de ação, cada um deles é uma tarefa para gerenciar
@@ -103,14 +110,16 @@
         </div>
         <div class="column">
             <div class="content">
-                <img src="img/img6.png" alt="img6" style="width:100%">
+                <img src="img/img6.png" alt="img6" style="width:100%" onclick="gameProjectPage('XDiseased')"
+                    alt="XDiseased">
                 <h3>X-Diseased</h3>
                 <p>Analogic game developed to Biochemistry's area courses at UNISINOS University.</p>
             </div>
         </div>
         <div class="column">
             <div class="content">
-                <img src="img/img7.png" alt="img7" style="width:100%">
+                <img src="img/img7.png" alt="img7" style="width:100%" onclick="gameProjectPage('FundaSimulator')"
+                    alt="FundaSimulator">
                 <h3>Funda Simulator</h3>
                 <p>Funda Simulator is an arcade VR game where the player can remember the sweet sensation of shooting
                     with a slingshoot without being repressed for destroying everything.</p>
@@ -118,7 +127,8 @@
         </div>
         <div class="column">
             <div class="content">
-                <img src="img/img8.png" alt="img8" style="width:100%">
+                <img src="img/img8.png" alt="img8" style="width:100%" onclick="gameProjectPage('SinergiaGame')"
+                    alt="SinergiaGame">
                 <h3>Sinergia Game</h3>
                 <p>O SINERGIA GAME é um jogo desenvolvido pelo estúdio experimental de desenvolvimento de jogos da
                     UNISINOS/RS, o Atomic Rocket Entertainment, para a II Mostra Sinergia que ocorre em 06 de Novembro
@@ -128,6 +138,8 @@
     </div>
     <!--FIM DA LINHA 2-->
     <!-- FIM DA GRID DO SITE UWU -->
+    </div>
+
 </body>
 
 </html>
